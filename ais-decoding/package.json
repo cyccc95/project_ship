@@ -11,6 +11,8 @@
   "dependencies": {
     "express": "^4.18.2",
     "mysql": "^2.18.1",
-    "protobufjs": "^7.2.2"
+    "proj4": "^2.8.1",
+    "protobufjs": "^7.2.2",
+    "ws": "^8.12.0"
   }
 }
