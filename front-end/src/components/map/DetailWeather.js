@@ -30,29 +30,6 @@ const DetailWeather = () => {
     return () => clearInterval(timer);
   }, []);
 
-  useEffect(() => {
-    let currentDate = new Date();
-    weather.record_time &&
-      axios
-        .post(
-          '/api/weather',
-          {
-            real_time: currentDate.setHours(currentDate.getHours() + 9),
-            record_time: weather.record_time,
-            wave_height: weather.wave_height,
-            wind_dir: weather.wind_dir,
-            wind_speed: weather.wind_speed,
-            current_dir: weather.current_dir,
-            current_speed: weather.current_speed,
-          },
-          {
-            headers: { 'Content-Type': 'application/json' },
-          },
-        )
-        .then((response) => {})
-        .catch((error) => console.log(error));
-  }, [weather]);
-
   return (
     <Card style={{ width: '15rem', backgroundColor: 'rgb(0, 24, 107)' }}>
       <Card.Body>
