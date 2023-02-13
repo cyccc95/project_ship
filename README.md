@@ -33,6 +33,9 @@
 + ERD : https://www.erdcloud.com/d/z7r569Zbby3icTTSP
 
 ### AIS-data-decoding
++ IDE : VScode
++ Version : Node.js 16.13.2, Express 4.18.2
++ Library : MySQL, proj4, protobufjs, ws
 
 ### VesselSignalProcessor
 + GC 제공 AIS 신호 수신 프로그램
