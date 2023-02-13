@@ -57,5 +57,12 @@
 # ✋🏻 Part
 
 # ⭕ Learned
++ **React**와 다양한 **React 라이브러리**들을 프로젝트에 적용해볼 수 있었음
++ **KakaoMap Open API**를 사용하면서 공식 문서를 찾아보며 프로젝트에 맞게 적용해볼 수 있었음
++ **JPA의 Query Methods** 뿐만 아니라 **Native Query**를 사용해 필요한 데이터들을 가져올 수 있었음
++ **Express framework**의 기본 사용법을 알게 되었음
++ **WebSocket**을 공부하고 사용해봄으로써 **개념, 사용이유, 작동원리, 문제점**을 알 수 있었음
++ **React**와 **Spring** 프로젝트를 연동하면서 발생한 **CORS 에러**를 **Proxy** 설정을 통해 해결할 수 있었음
 
-# ❌ Problems
+# 🔥 Improvement
++ 
