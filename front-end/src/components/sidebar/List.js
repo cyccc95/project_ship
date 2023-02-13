@@ -7,7 +7,7 @@ import ListItemText from '@mui/material/ListItemText';
 import { FixedSizeList } from 'react-window';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const ListStyle = styled.div`
   height: 40vh;
@@ -26,6 +26,8 @@ const getShips = (setShips) => {
 const List = () => {
   const [ships, setShips] = useState([]);
 
+  const navigate = useNavigate();
+
   useEffect(() => {
     getShips(setShips);
 
@@ -41,9 +43,16 @@ const List = () => {
 
     return (
       <ListItem style={style} key={index} component="div" disablePadding>
-        <Link
-          to={'/ship/' + ships[index].aisKey.ship.mmsi}
-          style={{ color: 'white', textDecoration: 'none' }}
+        <div
+          onClick={() => {
+            navigate('/ship/' + ships[index].aisKey.ship.mmsi, {
+              state: {
+                posX: ships[index].posX,
+                posY: ships[index].posY,
+              },
+            });
+          }}
+          style={{ color: 'white' }}
         >
           <ListItemButton>
             <ListItemText
@@ -51,7 +60,7 @@ const List = () => {
             ${ships[index].aisKey.ship.shipType === 70 ? '화물선' : '유조선'}`}
             />
           </ListItemButton>
-        </Link>
+        </div>
       </ListItem>
     );
   };
