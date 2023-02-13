@@ -19,7 +19,12 @@ const Search = () => {
 
   const searchShip = (e) => {
     e.preventDefault();
-    navigate('/ship/' + mmsi);
+    navigate('/ship/' + mmsi, {
+      state: {
+        posX: 129.170667,
+        posY: 35.050701,
+      },
+    });
   };
 
   return (
