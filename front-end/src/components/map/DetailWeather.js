@@ -6,25 +6,22 @@ import axios from 'axios';
 const DetailWeather = () => {
   const [weather, setWeather] = useState({});
 
-  useEffect(() => {
+  const getWeather = (setWeather) => {
     axios
       .get(
         'http://www.khoa.go.kr/api/oceangrid/buObsRecent/search.do?ServiceKey=yKqx3L4r4GYGq47m/a05g==&ObsCode=TW_0062&ResultType=json',
       )
       .then((response) => {
-        setWeather({ ...weather, ...response.data.result.data });
+        setWeather(response.data.result.data);
       })
       .catch((error) => console.log(error));
+  };
+
+  useEffect(() => {
+    getWeather(setWeather);
 
     const timer = setInterval(() => {
-      axios
-        .get(
-          'http://www.khoa.go.kr/api/oceangrid/buObsRecent/search.do?ServiceKey=yKqx3L4r4GYGq47m/a05g==&ObsCode=TW_0062&ResultType=json',
-        )
-        .then((response) => {
-          setWeather({ ...weather, ...response.data.result.data });
-        })
-        .catch((error) => console.log(error));
+      getWeather(setWeather);
     }, 60000); // 1분
 
     return () => clearInterval(timer);
