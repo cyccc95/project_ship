@@ -18,7 +18,7 @@
 
 # 🛠️ Tech Stack
 
-`Java` `Spring Framework` `SpringBoot` `React` `Express` `MySQL`
+`Java` `Spring Framework` `Javascript` `React` `Express` `MySQL`
 
 # ⚙️ Development Environment & Architecture
 
