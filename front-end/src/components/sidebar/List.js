@@ -14,11 +14,11 @@ const ListStyle = styled.div`
   padding: 20px;
 `;
 
-const getShips = (ships, setShips) => {
+const getShips = (setShips) => {
   axios
     .get('/api/ships')
     .then((response) => {
-      setShips([...ships, ...response.data]);
+      setShips(response.data);
     })
     .catch((error) => console.log(error));
 };
@@ -27,10 +27,10 @@ const List = () => {
   const [ships, setShips] = useState([]);
 
   useEffect(() => {
-    getShips(ships, setShips);
+    getShips(setShips);
 
     const timer = setInterval(() => {
-      getShips(ships, setShips);
+      getShips(setShips);
     }, 10000);
 
     return () => clearInterval(timer);
