@@ -4,8 +4,8 @@ import axios from 'axios';
 import moment from 'moment';
 
 const { kakao } = window;
-let markers = []; // 마커를 저장할 배열
-let infowindows = []; // 인포윈도우를 저장할 배열
+const markers = []; // 마커를 저장할 배열
+const infowindows = []; // 인포윈도우를 저장할 배열
 
 // 인포윈도우 표시 함수
 const makeOverListener = (map, marker, infowindow) => {
