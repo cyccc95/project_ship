@@ -16,7 +16,7 @@
 # 🛠️ Tech Stack
 `Java` `Spring Framework` `SpringBoot` `React` `Express` `MySQL`
 
-# ⚙️ Architecture
+# ⚙️ Development Environment & Architecture
 ### FrontEnd
 + IDE : VScode
 + Version : Node.js 16.13.2
