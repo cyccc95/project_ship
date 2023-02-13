@@ -6,12 +6,12 @@ import DetailRoute from '../../components/map/DetailRoute';
 import moment from 'moment';
 
 const { kakao } = window;
-let markers = []; // 마커를 저장할 배열
-let infowindows = []; // 인포윈도우를 저장할 배열
-let predictedMarkers = []; // 예측 마커를 저장할 배열
-let predictedInfowindows = []; // 예측 인포윈도우를 저장할 배열
-let greenLinePath = []; // 정상 신호 위치들을 연결할 선 배열
-let redLinePath = []; // 소실 신호 예측 위치들을 연결할 선 배열
+const markers = []; // 마커를 저장할 배열
+const infowindows = []; // 인포윈도우를 저장할 배열
+const predictedMarkers = []; // 예측 마커를 저장할 배열
+const predictedInfowindows = []; // 예측 인포윈도우를 저장할 배열
+const greenLinePath = []; // 정상 신호 위치들을 연결할 선 배열
+const redLinePath = []; // 소실 신호 예측 위치들을 연결할 선 배열
 let greenPolyline = null;
 let redPolyline = null;
 
