@@ -6,7 +6,7 @@ import Detail from '../../components/map/Detail';
 import moment from 'moment';
 
 const { kakao } = window;
-let markers = []; // 마커를 저장할 배열
+const markers = []; // 마커를 저장할 배열
 
 const DetailStyle = styled.div`
   position: absolute;
