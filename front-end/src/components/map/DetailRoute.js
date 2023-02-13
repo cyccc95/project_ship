@@ -1,15 +1,9 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Table from 'react-bootstrap/Table';
-import { useNavigate } from 'react-router-dom';
 
 const DetailRoute = (props) => {
   const ship = props.ship;
-  const navigate = useNavigate();
-
-  const shipRoute = () => {
-    navigate('/ship/route/' + ship.aisKey.ship.mmsi);
-  };
 
   return (
     <Card style={{ width: '15rem', backgroundColor: 'rgb(0, 24, 107)' }}>
