@@ -57,6 +57,7 @@
 <img src='./image/architecture.png'>
 
 # ✋🏻 Part
+- 개인 프로젝트
 
 # ⭕ Learned
 
