@@ -40,7 +40,7 @@
 - MySQL 8.0
 - ERD
   <br />
-  <img src='./image/erd.png'>
+  <img src='./image/erd.png' width='80%'>
 
 ### AIS-data-decoding
 
@@ -54,7 +54,7 @@
 
 ### Architecture
 
-<img src='./image/architecture.png'>
+<img src='./image/architecture.png' width='80%'>
 
 # ⭕ Learned
 
@@ -75,20 +75,15 @@
 
 # 📷 Screenshot
 
-- 전체 선박의 최신 위치를 표시
-  <img src='./image/ships.png'>
-  <br />
-- 유조선만 표시
-  <img src='./image/shipsTanker.png'>
-  <br />
-- 화물선만 표시
-  <img src='./image/shipsCargo.png'>
-  <br />
-- 신호 소실 선박만 표시
-  <img src='./image/shipsLoss.png'>
-  <br />
-- 선택한 선박, 상세 정보 표시
-  <img src='./image/ship.png'>
-  <br />
-- 선택한 선박의 상세 경로 표시
-  <img src='./image/shipRoute.png'>
+- 전체 선박의 최신 위치를 표시<br />
+  <img src='./image/ships.png' width='80%'>
+- 유조선만 표시<br />
+  <img src='./image/shipsTanker.png' width='80%'>
+- 화물선만 표시<br />
+  <img src='./image/shipsCargo.png' width='80%'>
+- 신호 소실 선박만 표시<br />
+  <img src='./image/shipsLoss.png' width='80%'>
+- 선택한 선박, 상세 정보 표시<br />
+  <img src='./image/ship.png' width='80%'>
+- 선택한 선박의 상세 경로 표시<br />
+  <img src='./image/shipRoute.png' width='80%'>
