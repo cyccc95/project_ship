@@ -56,9 +56,6 @@
 
 <img src='./image/architecture.png'>
 
-# ✋🏻 Part
-- 개인 프로젝트
-
 # ⭕ Learned
 
 - **React**와 다양한 **React 라이브러리**들을 프로젝트에 적용해볼 수 있었음
